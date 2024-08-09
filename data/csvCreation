@@ -1,0 +1,16 @@
+#For CSV file from https://github.com/Tyrrrz/DiscordChatExporter
+import pandas as pd
+
+#csv file of all messages on a server/channel etc
+input_csv_file = 'Data/AllMessages.csv' 
+  
+#csv file with only one users messsages
+output_csv_file = 'Data/UserMessages.csv' 
+
+# Read the CSV file into a DataFrame
+df = pd.read_csv(input_csv_file)
+
+filtered_df = df[df['Author'] != 'UserName']
+
+#Save filtered df to new csv
+filtered_df.to_csv(output_csv_file, index=False)
