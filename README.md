@@ -13,6 +13,15 @@ Discord bot built on an NLP that recognizes speech patterns of a certain user an
 - discord
   
 # Setup Steps
+## 0. (Recommended) Setup Virtual Environment
+MacOS/Linux: <br>
+`python3 -m venv NAME` <br>
+`source NAME/bin/activate`
+
+Windows: <br>
+`python3 -m venv env` <br>
+`.\env\Scripts\activate`
+
 ## 1. Export chat(s)
    Prefferably with that has a large amount of messages from the user you want to pick up the speech patterns of. <br>
    Use: https://github.com/Tyrrrz/DiscordChatExporter
